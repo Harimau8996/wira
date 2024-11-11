@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>幸運轉輪</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>幸運轉輪</h1>
+    </header>
+    <div id="main-content">
+      <aside id="winners-list">
+        <h2>贏家清單</h2>
+        <ul id="winners">
+          <li>2024-11-10 - Ng **** - 獎勵 RM 1.2</li>
+          <li>2024-11-10 - Lau **** - 獎勵 RM 31.3</li>
+        </ul>
+      </aside>
+      <div id="wheel-container">
+        <!-- 輪盤部分 -->
+        <div id="wheel-wrapper">
+          <img id="wheelBorder" src="img/spin-border.webp" alt="輪盤邊框" />
+          <canvas id="wheelCanvas" width="400" height="400"></canvas>
+          <button id="spinButton">
+            <img src="img/spin-button.svg" alt="開始旋轉" />
+          </button>
+          <img id="wheelPointer" src="img/spin-pointer.webp" alt="指針" />
+        </div>
+        <p id="result">請點擊按鈕旋轉</p>
+          <!-- 選擇旋轉次數 -->
+        <div id="spin-options">
+          <button class="spin-option" data-spins="10">10 次旋轉 - 100 硬幣</button>
+          <button class="spin-option" data-spins="50">50 次旋轉 - 500 硬幣</button>
+          <button class="spin-option" data-spins="100">100 次旋轉 - 1000 硬幣</button>
+          </div>
+      </div>
+      <aside id="prizes-list">
+        <h2>獎品列表</h2>
+        <ul id="prizes">
+          <li>VIVO V40</li>
+          <li>Samsung Watch 7</li>
+        </ul>
+      </aside>
+    </div>
+      <footer>
+      <div id="terms">
+        <h3>條款和條件</h3>
+        <ul>
+          <li>積分不能與其他存款和獎金混合使用。</li>
+          <li>1名會員/1個ID/1個名稱只能參加此幸運轉輪活動。</li>
+          <li>僅限老虎機遊戲。</li>
+          <li>銀行帳戶名稱必須與註冊名稱一致，否則將無法獲得獎金。</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
